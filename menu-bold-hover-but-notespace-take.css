@@ -1,0 +1,10 @@
+.main-menu ul li a::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.main-menu ul li a:hover
+{font-weight: bold;}
