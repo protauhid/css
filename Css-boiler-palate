@@ -8,8 +8,8 @@
 	--container-width: 100vw;
 	--container-max-width: 1280px;
 	--heading-font: "Lato", "Mulish", "Helvetica", sans-serif;
-	--body-link-color: #111;
-	--body-link-hover-color: #111;
+	--body-link-color: blue;
+	--body-link-hover-color: ;
 	--white: #fff;
 	--black: #090a0d;
 	--container-outer-padding: 50px;
