@@ -1,0 +1,233 @@
+/* ========== Control ==========*/
+:root {
+	--body-font: "Maven Pro", sans-serif;
+	--body-font-size: 20px;
+	--body-line-height: 32px;
+	--body-color: #111;
+	--body-bg-color: transparent;
+	--container-width: 100vw;
+	--container-max-width: 1280px;
+	--heading-font: "Lato", "Mulish", "Helvetica", sans-serif;
+	--body-link-color: #111;
+	--body-link-hover-color: #111;
+	--white: #fff;
+	--black: #090a0d;
+	--container-outer-padding: 50px;
+
+	--form-border-color: #000f45;
+	--form-input-bg: #000f45;
+}
+/* ========== Normolizer ==========*/
+* {
+	box-sizing: border-box;
+}
+img,
+svg,
+iframe {
+	height: auto;
+	max-width: 100%;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+.svg-inline--fa {
+	display: inline-block;
+	font-size: inherit;
+	height: 1em;
+	overflow: visible;
+	vertical-align: -0.125em;
+}
+img,
+svg,
+iframe {
+	height: auto;
+	max-width: 100%;
+}
+/* ========== Set Default ==========*/
+body {
+	background: var(--body-bg-color,transparent);
+	color: var(--body-color);
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: var(--body-font);
+	font-size: var(--body-font-size, 16px);
+	line-height: var(--body-line-height, 1.3);
+}
+a {
+	color: var(--body-link-color);
+	text-decoration: none;
+	transition: all 0.25s ease;
+}
+a:hover {
+	color: var(--body-link-hover-color);
+	text-decoration: underline;
+}
+/* ========== From wrap ==========*/
+
+#pardot-form {
+	background-color: transparent;
+	font-family: var(--heading-font);
+	font-size: 20px;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+/*Link */
+#pardot-form a {
+	color: var(--body-link-color);
+}
+#pardot-form a:hover {
+	color: var(--body-link-hover-color);
+}
+
+/* Lable */
+#pardot-form p.form-field {
+	padding: 10px;
+	width: 100%;
+	margin: 0;
+	float: left;
+	clear: none;
+}
+#pardot-form p.form-field label {
+	font-family: var(--heading-font);
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+	margin: 0px 0px 10px 0px;
+	width: auto;
+	line-height: 150%;
+}
+
+/* Input Fild */
+
+body #pardot-form [type="text"],body #pardot-form [type="email"],body #pardot-form [type="number"],body #pardot-form select,body #pardot-form textarea
+ {
+	background-color: var(--form-input-bg);
+	padding: 16px;
+	margin: 0px;
+	font-weight: 400;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border: 1px solid var(--form-border-color);
+	width: 100%;
+	outline: none;
+	transition: all 0.3s ease;
+}
+
+/* placeholder */
+#pardot-form .placeholder,
+#pardot-form :-moz-placeholder,
+#pardot-form :-moz-placeholder ,
+#pardot-form ::-moz-placeholder,
+#pardot-form :-ms-input-placeholder,
+#pardot-form ::-webkit-input-placeholder {
+	color: #848b92;
+	opacity: 1;
+	font-weight: lighter !important;
+}
+
+/* focus */
+body #pardot-form [type="text"]:focus,body #pardot-form [type="email"]:focus,body #pardot-form [type="number"]:focus,body #pardot-form select:focus,body #pardot-form textarea:focus{
+	outline: none;
+	border-color: var(--form-border-color);
+}
+/* select */
+#pardot-form p.form-field.pd-select select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-user-select: none;
+}
+
+/* description */
+#pardot-form .description {
+	font-style: none;
+	font-size: inherit;
+}
+
+/* description */
+#pardot-form p.submit {
+	padding: 10px;
+	width: 100%;
+	margin-top: 20px;
+	float: left;
+	clear: none;
+	text-align: center !important;
+	margin: 1em 0px !important;
+}
+
+#pardot-form p.submit input {
+	background: #000f45;
+	font-weight: 400;
+	padding: 10px 40px;
+	font-size: 1.1em;
+	line-height: 120%;
+	border: 1px solid rgba(0, 15, 69, 0.3);
+	border-radius: 70px;
+	-webkit-border-radius: 70px;
+	-moz-border-radius: 70px;
+	color: #fff;
+	width: auto;
+	transition: all 0.3s ease;
+}
+
+#pardot-form p.submit input:hover {
+	background: #9cdcf1;
+	color: #000f45;
+	border: 1px solid #9cdcf1;
+	cursor: pointer;
+}
+
+/* Require Sign */
+#pardot-form label:after {
+	content: " ";
+	color: #000f45;
+}
+#pardot-form .required label {
+    background-image: none; }
+
+#pardot-form .pd-hidden {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+#pardot-form p,
+#pardot-form div,
+#pardot-form h1,
+#pardot-form h2,
+#pardot-form h3,
+#pardot-form h4,
+#pardot-form h5,
+#pardot-form h6,
+#pardot-form hr,
+#pardot-form table,
+#pardot-form ul,
+#pardot-form ol {
+	padding-left: 10px;
+}
+
+/* error */
+#pardot-form .error {
+	color: #000f45;
+	background-color: transparent;
+}
+#pardot-form .error.no-label {
+	margin-left: 20px;
+}
+#pardot-form .error input,
+#pardot-form .error select,
+#pardot-form .error textarea {
+	border: 1px solid #dd0000 !important;
+}
+#pardot-form .errors {
+	color: #000f45;
+	background-color: transparent;
+}
+#pardot-form .errors.no-label {
+	margin-left: 20px;
+}
